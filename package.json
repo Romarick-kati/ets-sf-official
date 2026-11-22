@@ -1,0 +1,9 @@
+{
+  "name": "ets-sf-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ETS SF corporate website (static, Netlify + Supabase Auth)",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

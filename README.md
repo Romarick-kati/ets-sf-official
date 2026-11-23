@@ -46,12 +46,14 @@ Quick option without Git: drag this folder onto https://app.netlify.com/drop
 
 Signed-in users get their email and name prefilled in the forms. Accounts are managed in Supabase > Authentication > Users.
 
-## Still needed from ETS SF
-Phone, WhatsApp, email, address, Facebook/Instagram links, company history, mission, vision,
-certifications, service area, real project photos, and the real domain
-(replace YOUR-DOMAIN in sitemap.xml and robots.txt).
-Photos are currently labelled "Illustrative example". When they are confirmed as ETS SF work or
-cleared for use, set `showIllustrativeLabel:false` in js/config.js.
+## Adding company details later
+Everything is in `js/config.js`. Leave a value empty and that item is simply not shown.
+- Contact: `phone`, `whatsapp`, `email`, `address`, `mapsEmbed`, `facebook`, `instagram`
+- Text: `history_en/fr`, `mission_en/fr`, `vision_en/fr`, `standards_en/fr`, `area_en/fr`
+- Photos: replace files in `images/` and keep the names.
+- `showIllustrativeLabel:true` puts an "Illustrative example" tag on every photo.
+- After you have a domain, add a `sitemap.xml` and a Sitemap line in `robots.txt`.
+The login icon appears in the header once `supabaseUrl` and `supabaseKey` are set.
 
 ## Notes
 - Icons: Font Awesome Free (CC BY 4.0), inlined as SVG.

@@ -11,5 +11,11 @@ const C={
   endpoint:'',       // optional: your own API URL instead of Netlify Forms
   supabaseUrl:'',    // Supabase project URL (enables login)
   supabaseKey:'',    // Supabase anon (public) key
-  showIllustrativeLabel:true // false removes the "Illustrative example" tags on photos
+  showIllustrativeLabel:false, // true shows an "Illustrative example" tag on photos
+  // Optional text. Leave '' and the section stays hidden. Fill in to show it on the site.
+  history_en:'',history_fr:'',     // short company story (home page)
+  mission_en:'',mission_fr:'',     // About page
+  vision_en:'',vision_fr:'',       // About page
+  standards_en:'',standards_fr:'', // certifications / standards (About page)
+  area_en:'',area_fr:''            // service area (FAQ)
 };
